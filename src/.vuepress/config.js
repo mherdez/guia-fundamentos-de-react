@@ -1,6 +1,6 @@
 module.exports = {
   dest: 'docs',
-  base: '/guia-fundamentos-de-react/', // VISUALIZACIÓN EN GITHUB
+  base: '/guia-de-react/', // VISUALIZACIÓN EN GITHUB
   // base: '/', // VISUALIZACIÓN LOCAL
   title: 'Fundamentos de React',
   description: 'Curso intersemestral de Fundamentos de React.',
