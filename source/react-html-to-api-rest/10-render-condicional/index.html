@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta
+		http-equiv="X-UA-Compatible"
+		content="IE=edge"
+	/>
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	/>
+	<title>Random Users</title>
+	<script
+		crossorigin
+		src="https://unpkg.com/react@17/umd/react.production.min.js"
+	></script>
+	<script
+		crossorigin
+		src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+	></script>
+	<script
+		src="https://unpkg.com/babel-standalone@6/babel.min.js"
+	></script>
+	<link
+		rel="stylesheet"
+		href="../style.css"
+	/>
+	<style>
+		.disabled {
+			opacity: 0.5;
+		}
+
+		.is-small {
+			width: 150px;
+		}
+
+		.is-large {
+			width: 250px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Random Users</h1>
+	<div id="app"></div>
+
+	<script type="text/babel">
+		const $app = document.querySelector('#app');
+		const useState = React.useState;
+
+		function Card({ id, name = 'Desconocido', size = '' }) {
+			const [enabled, setEnabled] = useState(true);
+			const src = `https://randomuser.me/api/portraits/women/${id}.jpg`;
+
+			let className = enabled ? '' : ' disabled ';
+
+			className +=
+				size === 'small' ? 'is-small' : size === 'large' ? 'is-large' : '';
+
+			return (
+				<article class="card">
+					<picture>
+						{id ? (
+							<img
+								onClick={() => setEnabled(!enabled)}
+								src={src}
+								className={'card-img-top ' + className}
+							/>
+						) : (
+							<img
+								src="https://cuv.upc.edu/es/shared/imatges/fotos-professorat-i-professionals/anonimo.jpg"
+								className={'card-img-top ' + className}
+							/>
+						)}
+						<h3 className="card-title-user">
+							{enabled ? name : 'Suspendido'}
+						</h3>
+					</picture>
+				</article>
+			);
+		}
+
+		ReactDOM.render(
+			<React.Fragment>
+				<Card id={5} name={'Marie'} size="large" />
+				<Card id={4} name={'User B'} />
+				<Card id={7} name={'User C'} />
+				<Card id={8} name={'User D'} />
+				<Card id={9} name={'User E'} size='small' />
+				<Card id={29} name={'User F'} />
+			</React.Fragment>,
+			$app
+		);
+	</script>
+</body>
+
+</html>
+
+<!-- <Card id={4} name="User A" size="small" />
+<Card size="small" />
+<Card />
+<Card id={3} name="User C" size="large" /> -->

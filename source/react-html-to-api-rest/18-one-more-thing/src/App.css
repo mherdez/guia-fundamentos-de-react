@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html, body {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+
+		user-select: none;
+}
+
+body {
+		position: relative;
+
+		background-color: #f9f9f9;
+
+		font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+		margin: 0;
+
+		font-weight: normal;
+}
+
+h1, h3 {
+		padding: 10px;
+
+		font-weight: 300;
+}
+
+h1 {
+		font-size: 2.5rem;
+}
+
+header {
+		width: 100%;
+		height: 400px;
+		margin: 0;
+		padding: 0;
+
+		background-color: rgb(44,46,49);
+
+		color: white;
+		text-align: center;
+}
+
+.title {
+		padding: 50px;
+}
+
+main {
+}
+
+.card {
+		position: relative;
+		display: block;
+
+		width: 600px;
+		min-height: 400px;
+		margin: -170px auto;
+
+		background-color: white;
+		box-shadow: 10px 10px 20px rgb(0 0 0 / 0.3);
+}
+
+.card-header {
+		position: relative;
+
+		box-sizing: border-box;
+		width: 100%;
+		height: 120px;
+		margin: 0 auto;
+		padding: 20px;
+
+		background-color: #f9f9f9;
+		border-bottom: #cccccc 1px solid;
+
+		text-align: center;
+
+		pointer-events: none; /*evita el drag en la imagen */
+}
+
+.card-header img {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+
+		padding: 5px;
+
+		box-shadow: 0 0 0 10px inset white;
+		border: #cccccc 1px solid;
+		border-radius: 50%;
+		transform: translate(-50%, 10%);
+}
+
+.card-body {
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 70px;
+		margin: 90px auto 0;
+
+		text-align: center;
+}
+
+.card-title {
+		margin: 15px;
+}
+
+.card-title h5 {
+		font-size: 1.6rem;
+		font-weight: 400;
+}
+
+.card-text {
+		margin: 10px;
+
+		font-size: 1rem;
+		color: rgb(180, 180, 180);
+}
+
+.card-footer {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 10px 0 0;
+		padding: 10px;
+}
+
+ul {
+		display: flex;
+		justify-content: space-around;
+
+		box-sizing: border-box;
+		margin: 0 50px 20px;
+		padding: 0;
+		overflow: hidden;
+}
+
+/* li {
+		display: inline-block;
+
+		margin: 0 20px;
+
+		color: #cccccc;
+		font-size: 38px;
+		line-height: 40px;
+		text-align: center;
+		list-style: none;
+} */
+
+li {
+		display: block;
+
+		width: 50px;
+		height: 65px;
+		overflow: hidden;
+
+		list-style: none;
+
+		cursor: pointer;
+}
+
+li img {
+		transform: translateY(15px);
+
+		transition: all 400ms ease;
+}
+
+.active {
+		transform: translateY(-61px);
+}
+
+.arrows {
+		position: absolute;
+		top: 45%;
+		display: flex;
+		justify-content: space-between;
+
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 25px;
+}
+
+.arrow-left, .arrow-right {
+		position: absolute;
+		top: 45%;
+
+		padding: 0 25px;
+
+		font-size: 2.5rem;
+		color: #cccccc;
+
+		cursor: pointer;
+		opacity: 1;
+}
+
+.arrow-left {
+		left: 0;
+}
+
+.arrow-right {
+		right: 0;
+}
+
+.arrow-left:hover {
+		transform: translateX(-3px);
+
+		color: #1bb600;
+}
+
+.arrow-right:hover {
+		transform: translateX(3px);
+
+		color: #1bb600;
+}

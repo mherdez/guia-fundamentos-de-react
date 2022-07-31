@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Users</title>
+		<script
+			crossorigin
+			src="https://unpkg.com/react@17/umd/react.production.min.js"
+		></script>
+		<script
+			crossorigin
+			src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+		></script>
+
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1>Random Users</h1>
+		<div id="app"></div>
+
+		<script>
+			const h = React.createElement;
+			const $app = document.querySelector('#app');
+
+			function Card(props) {
+				const src = `https://randomuser.me/api/portraits/men/${props.id}.jpg`;
+
+				return h('article', { className: 'card' }, [
+					h('picture', null, [
+						h('img', { src, className: 'card-img-top' }),
+						h('h3', { className: 'card-title-user' }, `${props.name}`),
+					]),
+				]);
+			}
+
+			// ReactDOM.render(h(Card, { id: 1, name: 'User A' }), $app);
+
+			ReactDOM.render(
+				h(React.Fragment, {}, [
+					h(Card, { id: 1, name: 'User A' }),
+					h(Card, { id: 2, name: 'User B' }),
+				]),
+				document.querySelector('#app')
+			);
+		</script>
+	</body>
+</html>

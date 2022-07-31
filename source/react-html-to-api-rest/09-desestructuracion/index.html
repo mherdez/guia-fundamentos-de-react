@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Users</title>
+		<script
+			crossorigin
+			src="https://unpkg.com/react@17/umd/react.production.min.js"
+		></script>
+		<script
+			crossorigin
+			src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+		></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<link rel="stylesheet" href="../style.css" />
+		<style>
+			.disabled {
+				opacity: 0.5;
+			}
+			.is-small {
+				width: 150px;
+			}
+			.is-large {
+				width: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Random Users</h1>
+		<div id="app"></div>
+
+		<script type="text/babel">
+			const $app = document.querySelector('#app');
+			const useState = React.useState;
+
+			function Card({ id, name = 'Anónimo', size }) {
+				const [enabled, setEnabled] = useState(true);
+				const src = `https://randomuser.me/api/portraits/men/${id}.jpg`;
+
+				let className = enabled ? '' : ' disabled ';
+
+				className +=
+					size === 'small' ? 'is-small' : size === 'large' ? 'is-large' : '';
+
+				return (
+					<article class="card">
+						<picture>
+							<img
+								onClick={() => setEnabled(!enabled)}
+								src={src}
+								className={'card-img-top ' + className}
+							/>
+							<h3 className="card-title-user">{name}</h3>
+						</picture>
+					</article>
+				);
+			}
+
+			ReactDOM.render(
+				<React.Fragment>
+					<Card id={1} name={'User A'} size={'small'} />
+					<Card id={2} />
+					<Card id={3} name="User C" size="large" />
+				</React.Fragment>,
+				$app
+			);
+		</script>
+	</body>
+</html>

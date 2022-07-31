@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Users</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1>Random Users</h1>
+		<div id="app"></div>
+
+		<script>
+			const $app = document.querySelector('#app');
+
+			function Card(props) {
+				const src = `https://randomuser.me/api/portraits/men/${props.id}.jpg`;
+
+				return `<article class="card">
+				<picture>
+					<img
+						class="card-img-top"
+						src=${src}
+						alt=""
+					/>
+					<h3 class="card-title-user">${props.name}</h3>
+				</picture>
+			</article>`;
+			}
+
+			$app.innerHTML += Card({ id: 1, name: 'User X' });
+			$app.innerHTML += Card({ id: 2, name: 'User Y' });
+			$app.innerHTML += Card({ id: 3, name: 'User Z' });
+			$app.innerHTML += Card({ id: 4, name: 'User D' });
+			$app.innerHTML += Card({ id: 5, name: 'User C' });
+			$app.innerHTML += Card({ id: 6, name: 'User B' });
+			$app.innerHTML += Card({ id: 7, name: 'User A' });
+		</script>
+	</body>
+</html>

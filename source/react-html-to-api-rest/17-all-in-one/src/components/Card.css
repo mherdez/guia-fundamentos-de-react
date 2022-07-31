@@ -1,0 +1,36 @@
+.card {
+		padding: 30px;
+
+		background: white;
+		box-shadow: 5px 5px 25px #444444;
+		border-radius: 15px;
+
+		font-family: sans-serif;
+		text-align: center;
+}
+
+.card-img-top {
+		width: 200px;
+
+		border-radius: 50%;
+}
+
+img {
+		width: 100%;
+}
+
+.card-title-user {
+		margin: 20px 0 0 0;
+}
+
+.disabled {
+		opacity: 0.5;
+}
+
+.is-small {
+		width: 150px;
+}
+
+.is-large {
+		width: 250px;
+}
