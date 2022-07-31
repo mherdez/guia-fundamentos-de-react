@@ -22,11 +22,17 @@ En la primera línea npx no es un error de escritura: Es una herramienta de ejec
 
 <img :src="$withBase('/img/11-estructura-cra.png')" width=250>
 
-## Objecty y Array
+- [Create React App](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/11-create-react-app)
 
-## Promesas y API Rest
+- [Objecty y Array](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/12-object-y-array)
 
-## Hook useEffect
+- [Promesas y API Rest](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/13-promesas-y-api-rest)
 
-## Comunicación entre Componentes
+- [Hook useEffect](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/14-useeffect)
 
+- [Comunicación entre Componentes](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/15-comunicacion-componentes)
+
+## Random Users v2.0 Final
+
+- [Demo](https://herdez-random-users-v2.netlify.app/)
+- [Source](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/16-demo-ok)
