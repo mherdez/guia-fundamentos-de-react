@@ -6,7 +6,7 @@
 
 React es una biblioteca de JavaScript para construir interfaces de usuario de forma declarativa, basado en componentes y con la ventaja de que se aprende una vez, y se escribe donde sea.
 
-En este curso se establecen los fundamentos de React, a partir de las bases de javascript para seguir con los fundamentos de React y, posteriormente, optar por una de dos rutas de aprendizaje, o porque no, ambas 👍.
+En este curso se tiene una primer acercamiento a React iniciando con un repaso de los temas de javascript que se emplearán más adelante en React; después se continúa con los fundamentos propios de React y, posteriormente, conocer más a fondo la libería a través de una de dos rutas de aprendizaje, o porque no, de ambas 👍.
 
 La primera ruta es una continuación del curso [Fundamentos de Frontend](https://mherdez.github.io/guia-fundamentos-de-frontend/), que mediante el uso de React, evoluciona la aplicación Random Users con el uso de hooks, javascript moderno y las peticiones Api rest.
 
