@@ -1,7 +1,7 @@
 # Introducción
 
-Este curso pretende establecer los fundamentos la librería React, iniciando con las bases de javascript y los fundamentos de React para posteriormente tomar uno de las dos rutas de aprendizaje.
+Este curso pretende establecer los fundamentos la librería React, iniciando con las bases de javascript y los fundamentos de React y, posteriormente, ofrecer dos rutas de aprendizaje.
 
-La primera ruta es una continuación del curso [Fundamentos de Frontend](https://mherdez.github.io/guia-fundamentos-de-frontend/), que mediante del uso de React, permite evolucionar la aplicación Random Users y llevarla al siguiente nivel, y;
+La primera ruta es una continuación del curso [Fundamentos de Frontend](https://mherdez.github.io/guia-fundamentos-de-frontend/), que mediante el uso de React, evoluciona la aplicación Random Users con el uso de hooks, javascript moderno y las peticiones Api rest.
 
-La segunda ruta, consta de una serie de aplicaciones donde se utilizan los elementos principales de React con un enfoque práctico.
+La segunda ruta, consta de diversas aplicaciones, con un enfoque práctico, donde se abordan elementos importantes de React.
