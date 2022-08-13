@@ -1,6 +1,6 @@
 # Bases de javascript
 
-:::warning Como presentar material
+:::tip Como presentar material
 - Concepto
 - Explicación objetiva
 - Código
@@ -28,7 +28,7 @@
 - Async - await
 - Operador ternario
 
-:::danger Valorar incluir estos temas
+:::tip Incluir estos temas:
 - Import y export
 - Exportaciones múltiples y por defecto
 :::
@@ -71,3 +71,4 @@ La declaración de función async define una función asíncrona, la cual devuel
 ## Await
 
 El operador `await` es usado para esperar a una Promise. Sólo puede ser usado dentro de una función `async`.
+

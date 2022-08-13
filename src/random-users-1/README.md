@@ -104,8 +104,8 @@ users.forEach((user) => {
     <article class="card">
       <picture>
         <img
-          class="card-img-top"
           src="https://randomuser.me/api/portraits/men/${user.id}.jpg"
+          class="card-img-top"
           alt=""
         />
         <h3 class="card-title-user">${user.name}</h3>
@@ -248,11 +248,11 @@ const $app = document.querySelector('#app');
 const root = ReactDOM.createRoot($app);
 
 root.render(
-  <>
+  <React.Fragment>
     <Card id={1} name={'User A'} />
     <Card id={2} name={'User B'} />
     <Card id={3} name={'User C'} />
-  </>
+  <React.Fragment/>
 );
 ~~~
 
@@ -263,7 +263,7 @@ function Card(props) {
   return (
     <article className="card">
       <picture>
-        <img src={src} className="card-img-top" />
+        <img src={src} className="card-img-top" alt=""/>
         <h3 className="card-title-user">{props.name}</h3>
       </picture>
     </article>
