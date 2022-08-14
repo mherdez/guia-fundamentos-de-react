@@ -341,15 +341,17 @@ function Card(props) {
 ~~~css
 ...
 
-  .disabled {
-    opacity: 0.5;
-  }
-  .is-small {
-    width: 150px;
-  }
-  .is-big {
-    width: 250px;
-  }
+.disabled {
+  opacity: 0.5;
+}
+
+.is-small {
+  width: 150px;
+}
+
+.is-big {
+  width: 250px;
+}
 ~~~
 
 **app.js**

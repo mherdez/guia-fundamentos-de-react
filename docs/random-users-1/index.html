@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <link rel="preload" href="/guia-fundamentos-de-react/assets/css/0.styles.92672e26.css" as="style"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/app.4bf56083.js" as="script"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/2.1f1abc6b.js" as="script"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/13.9110270b.js" as="script"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/10.4fbc9bd2.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/11.25663c33.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/12.c7f9c09a.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/14.1d166d54.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/15.00ab94d3.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/16.c5930046.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/17.6ca6bbc2.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/18.c6cb9308.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/3.17f6c0e6.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/4.68d5b925.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/5.6a5b3ab9.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/6.25296508.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/7.9e5f4647.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/8.27c51410.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/9.1c7b0bd0.js">
+    <link rel="preload" href="/guia-fundamentos-de-react/assets/css/0.styles.92672e26.css" as="style"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/app.45a36762.js" as="script"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/2.1f1abc6b.js" as="script"><link rel="preload" href="/guia-fundamentos-de-react/assets/js/13.6bcf5107.js" as="script"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/10.9ff1085c.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/11.8e91c059.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/12.91b0994e.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/14.4642a644.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/15.334f8d2c.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/16.f9ee9583.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/17.2a2a0121.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/18.85329f66.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/3.17f6c0e6.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/4.68d5b925.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/5.6a5b3ab9.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/6.25296508.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/7.3438b46a.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/8.6e7bfb18.js"><link rel="prefetch" href="/guia-fundamentos-de-react/assets/js/9.6abe2b51.js">
     <link rel="stylesheet" href="/guia-fundamentos-de-react/assets/css/0.styles.92672e26.css">
   </head>
   <body>
@@ -295,15 +295,17 @@ root<span class="token punctuation">.</span><span class="token function">render<
 <span class="token punctuation">}</span>
 </code></pre></div><h2 id="reusabilidad"><a href="#reusabilidad" class="header-anchor">#</a> Reusabilidad</h2> <p><strong>style.css</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">...
 
-  .disabled</span> <span class="token punctuation">{</span>
-    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token selector">.is-small</span> <span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token selector">.is-big</span> <span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+.disabled</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.is-small</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.is-big</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre></div><p><strong>app.js</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>Card id<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span> name<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'User A'</span><span class="token punctuation">}</span> size<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'small'</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>Card id<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span> name<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'User B'</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>Card id<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span> name<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'User C'</span><span class="token punctuation">}</span> size<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'big'</span><span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
@@ -425,6 +427,6 @@ root<span class="token punctuation">.</span><span class="token function">render<
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/guia-fundamentos-de-react/assets/js/app.4bf56083.js" defer></script><script src="/guia-fundamentos-de-react/assets/js/2.1f1abc6b.js" defer></script><script src="/guia-fundamentos-de-react/assets/js/13.9110270b.js" defer></script>
+    <script src="/guia-fundamentos-de-react/assets/js/app.45a36762.js" defer></script><script src="/guia-fundamentos-de-react/assets/js/2.1f1abc6b.js" defer></script><script src="/guia-fundamentos-de-react/assets/js/13.6bcf5107.js" defer></script>
   </body>
 </html>
