@@ -9,7 +9,7 @@
 ~~~html
 <head>
   <!-- CSS -->
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -273,7 +273,7 @@ function Card(props) {
 
 ## Eventos
 
-  **Card.jsx**
+  **style.css**
 ~~~css
 ...
 
@@ -336,10 +336,11 @@ function Card(props) {
 
 ## Reusabilidad
 
-**index.html**
+**style.css**
 
-~~~html
-<style>
+~~~css
+...
+
   .disabled {
     opacity: 0.5;
   }
@@ -349,7 +350,6 @@ function Card(props) {
   .is-big {
     width: 250px;
   }
-<./style>
 ~~~
 
 **app.js**
