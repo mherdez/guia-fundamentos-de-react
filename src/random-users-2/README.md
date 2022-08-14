@@ -1,5 +1,8 @@
 # Ruta 1 - Random Users v2.0
 
+- [Demo](https://herdez-random-users-v2.netlify.app/)
+- [Source](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/16-demo-ok)
+
 <img :src="$withBase('/img/random-users-2.png')">
 
 ## Create-react-app
@@ -32,7 +35,3 @@ En la primera línea npx no es un error de escritura: Es una herramienta de ejec
 
 - [Comunicación entre Componentes](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/15-comunicacion-componentes)
 
-## Random Users v2.0 Final
-
-- [Demo](https://herdez-random-users-v2.netlify.app/)
-- [Source](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/16-demo-ok)
