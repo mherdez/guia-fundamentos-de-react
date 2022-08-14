@@ -9,7 +9,7 @@
 ~~~html
 <head>
   <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -76,10 +76,10 @@ width: 100%;
 ~~~html
 <head>
   <!-- App -->
-  <script defer src="app.js"></script>
+  <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -121,11 +121,11 @@ users.forEach((user) => {
 ~~~html
 <head>
   <!-- App -->
-  <script src="Card.js"></script>
-  <script defer src="app.js"></script>
+  <script src="./Card.js"></script>
+  <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <h1>Random Users</h1>
@@ -174,11 +174,11 @@ function Card(props) {
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
   <!-- App -->
-  <script src="Card.js"></script>
-  <script defer src="app.js"></script>
+  <script src="./Card.js"></script>
+  <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -230,11 +230,11 @@ function Card(props) {
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
   <!-- App -->
-  <script src="Card.jsx" type="text/babel"></script>
-  <script defer src="app.js" type="text/babel"></script>
+  <script src="./Card.jsx" type="text/babel"></script>
+  <script defer src="./app.js" type="text/babel"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -273,6 +273,15 @@ function Card(props) {
 
 ## Eventos
 
+  **Card.jsx**
+~~~css
+...
+
+.disabled {
+  opacity: 0.5;
+}
+~~~
+
 **Card.jsx**
 ~~~js
 function Card(props) {
@@ -297,16 +306,6 @@ function Card(props) {
 ~~~
 
 ## Hooks
-
-**index.html**
-
-~~~html
-<style>
-  .disabled {
-    opacity: 0.5;
-  }
-</style>
-~~~
 
 **Card.jsx**
 ~~~js
@@ -350,7 +349,7 @@ function Card(props) {
   .is-big {
     width: 250px;
   }
-</style>
+<./style>
 ~~~
 
 **app.js**
