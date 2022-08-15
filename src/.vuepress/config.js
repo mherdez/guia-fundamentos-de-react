@@ -56,10 +56,6 @@ module.exports = {
         text: 'Markdown',
         link: 'https://markdown.es/',
       },
-      {
-        text: 'React',
-        link: 'https://es.reactjs.org/',
-      },
     ],
     sidebar: [
       '/',
