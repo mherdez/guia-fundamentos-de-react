@@ -45,6 +45,10 @@ module.exports = {
         link: 'https://developer.mozilla.org/es/docs/Web/JavaScript',
       },
       {
+        text: 'React',
+        link: 'https://es.reactjs.org/',
+      },
+      {
         text: 'Vuepress',
         link: 'https://vuepress.vuejs.org/',
       },
