@@ -79,7 +79,7 @@ width: 100%;
   <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
@@ -125,7 +125,7 @@ users.forEach((user) => {
   <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <h1>Random Users</h1>
@@ -178,7 +178,7 @@ function Card(props) {
   <script defer src="./app.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <h1>Random Users</h1>
