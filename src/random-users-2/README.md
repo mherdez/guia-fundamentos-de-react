@@ -8,7 +8,7 @@
 
 - [Create React App](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/11-create-react-app)
 
-- [Objecty y Array](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/12-object-y-array)
+- [Object y Array](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/12-object-y-array)
 
 - [Promesas y API Rest](https://github.com/mherdez/guia-fundamentos-de-react/tree/main/source/react-html-to-api-rest/13-promesas-y-api-rest)
 
